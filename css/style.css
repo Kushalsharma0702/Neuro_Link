@@ -1,6 +1,30 @@
+/* Hide the checkboxes */
+.read-more-check {
+    display: none;
+}
 
-/*** Spinner Start ***/
-/*** Spinner ***/
+/* Initially hide the extra content */
+.more-text {
+    display: none;
+}
+
+/* Show extra text when the corresponding checkbox is checked */
+.read-more-check:checked + label + .more-text {
+    display: block;
+}
+
+/* Hide the initial short text when the corresponding checkbox is checked */
+.read-more-check:checked + label + .more-text + .short-text {
+    display: none;
+}
+
+/* Button styling */
+.btn-light {
+    cursor: pointer;
+}
+
+
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -640,6 +664,30 @@
 .service .service-item .service-icon,
 .service .service-item a {
     transition: 0.5s;
+    /* Hide the checkboxes */
+.read-more-check {
+    display: none;
+}
+
+/* Initially hide the extra content */
+.more-text {
+    display: none;
+}
+
+/* Show extra text when the corresponding checkbox is checked */
+.read-more-check:checked + label + .more-text {
+    display: block;
+}
+
+/* Hide the initial short text when the corresponding checkbox is checked */
+.read-more-check:checked + label + .more-text + .short-text {
+    display: none;
+}
+
+/* Button styling */
+.btn-light {
+    cursor: pointer;
+}
 }
 
 .service .service-item:hover {
